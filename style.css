@@ -50,7 +50,7 @@ nav a:hover {
 
 .hero {
     height: 100vh;
-    background-image: url("assets/hero.jpg");
+    background-image: url("assets/LibraryHero.png");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -89,6 +89,11 @@ nav a:hover {
     font-size: 1.3rem;
     color: #ddd;
     margin-bottom: 40px;
+}
+
+/* Spectral Sonata hero image */
+.hero-ss {
+    background-image: url("../assets/LibraryHero.png");
 }
 
 /* ===== Sections ===== */
