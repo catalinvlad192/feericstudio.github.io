@@ -2,55 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Your Studio Name</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feeric Studio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-    <h1>Feeric Studio</h1>
-    <nav>
+    <div class="logo-area">
+        <img src="assets/logo.png" alt="Studio Logo" class="logo">
+        <span class="studio-name">Your Studio Name</span>
+    </div>
+
+    <nav class="main-nav">
         <a href="#about">About</a>
-        <a href="spectral-sonata/">Spectral Sonata</a>
+        <a href="#games">Our Games</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
     <div class="hero-content">
-        <h2>Feeric Studio</h2>
-        <p>Independent Game Development</p>
-        <a href="spectral-sonata/" class="button">View Spectral Sonata</a>
+        <h1>Your Studio Name</h1>
+        <p>Crafting immersive and atmospheric interactive experiences.</p>
     </div>
 </section>
 
-<section id="about">
-    <h2>About</h2>
+<section id="about" class="content">
+    <h2>About Us</h2>
     <p>
-        Independent studio focused on immersive, emotionally driven games. Check out our content.
+        Your studio description goes here. Describe your vision, tone, genre focus,
+        and development philosophy.
     </p>
 </section>
 
-<section id="games">
-    <h2>Games</h2>
+<section id="games" class="content">
+    <h2>Our Games</h2>
 
-    <div class="game-card">
-        <h3>Spectral Sonata</h3>
-        <p>A haunting musical journey blending atmosphere and emotion.</p>
-        <a href="spectral-sonata/" class="button">
-            View Game Page
-        </a>
+    <div class="games-grid">
+
+        <div class="game-card">
+            <img src="assets/ss1.png" alt="Spectral Sonata" class="game-thumb">
+            <h3>Spectral Sonata</h3>
+            <p>A haunting musical journey blending atmosphere and emotion.</p>
+            <a href="https://store.steampowered.com/" target="_blank" class="button">
+                View on Steam
+            </a>
+        </div>
+
+        <!-- Add more games here -->
+
     </div>
 </section>
 
-<section id="contact">
-    <h3>Contact</h3>
-    <p>Email: feericstudio@gmail.com</p>
+<section id="contact" class="content">
+    <h2>Contact</h2>
+
+    <div class="contact-grid">
+        <div>Email: your@email.com</div>
+        <div><a href="#">Twitter</a></div>
+        <div><a href="#">TikTok</a></div>
+        <div><a href="#">Bluesky</a></div>
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 Feeric Studio</p>
+    © 2026 Your Studio Name
 </footer>
 
 </body>
