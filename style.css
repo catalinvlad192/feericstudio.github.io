@@ -23,7 +23,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 20px 60px;
+    height: 70px;          /* Set exact height */
+    padding: 0 60px;       /* Remove vertical padding */
     display: flex;
     align-items: center;
     justify-content: space-between;
