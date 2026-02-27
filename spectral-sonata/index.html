@@ -2,51 +2,144 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spectral Sonata</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/Icon.png">
 </head>
+
 <body>
 
 <header>
-    <h1>Spectral Sonata</h1>
-    <nav>
-        <a href="../">Studio</a>
-        <a href="https://store.steampowered.com/app/3313430/Spectral_Sonata/" target="_blank">Steam Page</a>
+    <div class="logo-area">
+        <a href="../index.html" class="logo-link">
+            <img src="../assets/FeericStudio.png" alt="Studio Logo" class="logo">
+        </a>
+    </div>
+
+    <nav class="main-nav">
+        <a href="https://store.steampowered.com/app/3313430/Spectral_Sonata/">Steam Page</a>
+        <a href="#about">About This Game</a>
+        <a href="#presskit">Press Kit</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<section class="hero-ss">
-    <h2>A haunting musical journey</h2>
-</section>
+<section class="hero">
+    <div class="hero-content">
+        <img src="../assets/LibraryLogo.png"
+             alt="Spectral Sonata Logo"
+             class="hero-logo">
 
-<section>
-    <h3>About the Game</h3>
-    <p>
-        A first person psychological horror game. Explore an ever-changing mansion in a slow-paced, atmospheric experience that combines hauntingly beautiful melodies with a suffocating environment. Uncover the tragic past, escape or confront the spirit.
-    </p>
-</section>
-
-<section>
-    <h3>Screenshots</h3>
-    <div class="screenshot-grid">
-        <img src="../assets/Screenshot_MainMenu.png" class="screenshot">
-        <img src="../assets/Screenshot_Mansion.png" class="screenshot">
-        <img src="../assets/Screenshot_Tent.png" class="screenshot">
-        <img src="../assets/Screenshot_Portal2.png" class="screenshot">
-        <img src="../assets/Screenshot_MonsterShadowOutside.png" class="screenshot">
+        <p>
+            A first person psychological horror game. Explore an ever-changing mansion in a slow-paced, atmospheric experience that combines hauntingly beautiful melodies with a suffocating environment. Uncover the tragic past, escape or confront the spirit.
+        </p>
     </div>
 </section>
 
-<section>
-    <a class="button large" href="https://store.steampowered.com/app/3313430/Spectral_Sonata/" target="_blank">
-        Wishlist on Steam
-    </a>
+<section id="about" class="content">
+    <h2>About This Game</h2>
+    <p>
+        Spectral Sonata is a first-person psychological horror experience set in a grand, decaying estate. As you navigate the shifting corridors, you uncover fragments of a tragic story tied to a prodigious musician whose presence still lingers within the house. The mansion subtly rearranges itself as you progress, revealing new passages, hidden rooms, and unsettling memories.
+    </p>
+    <p>
+        Haunting melodies echo through the halls, sometimes offering guidance, other times signaling imminent danger. Piece together the past by discovering scattered notes, forgotten memories, and environmental clues. Your actions and understanding of the tragedy dictate your fate.
+    </p>
+    <p>
+        Will you escape the mansion’s grasp, drive the spirit away, or finally set its soul free?
+    </p>
+    <p>
+        Key features:
+    <p>
+    <ul style="list-style-type:circle">
+      <li>Psychological Tension: A slow-burn experience built on tension, unease, and anticipation.</li>
+      <li>Dynamic Exploration: Explore a dynamic environment where the layout shifts as you progress.</li>
+      <li>Sound-Driven Gameplay: Music and ambient audio guide, warn, and shape the experience.</li>
+      <li>Environmental Storytelling: Uncover the narrative through notes, memories, and subtle visual details.</li>
+      <li>Multiple Endings: The conclusion is determined by your actions and understanding of the story.</li>
+    </ul>
+</section>
+
+<section class="video-section">
+    <h2>Trailer</h2>
+
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/FRLkpyPGL9U"
+            title="Spectral Sonata Trailer"
+            referrerpolicy=“strict-origin-when-cross-origin”
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+<section class="screenshot-section">
+    <div class="content">
+        <h2>Screenshots</h2>
+
+        <div class="slideshow">
+            <img src="../assets/Screenshot_MainMenu.png" class="slide">
+            <img src="../assets/Screenshot_MonsterShadowOutside.png" class="slide">
+            <img src="../assets/Screenshot_Portal2.png" class="slide">
+            <img src="../assets/Screenshot_Tent.png" class="slide">
+            <img src="../assets/Screenshot_Mansion.png" class="slide">
+        </div>
+    </div>
+</section>
+
+<section id="presskit" class="content">
+    <h2>Press Kit</h2>
+    <p>
+        Download
+    </p>
+    <p>
+        Download
+    </p>
+    <p>
+        Download
+    </p>
+</section>
+
+<section id="contact" class="content">
+    <h2>Contact</h2>
+
+    <div class="contact-grid">
+        <div>Email: feericstudio@gmail.com</div>
+        <div><a href="https://x.com/FeericStudio">Twitter</a></div>
+        <div><a href="https://www.tiktok.com/@feericstudio">TikTok</a></div>
+        <div><a href="https://bsky.app/profile/feericstudio.bsky.social">Bluesky</a></div>
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 Feeric Studio</p>
+    © 2026 Feeric Studio
 </footer>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+    const slides = document.querySelectorAll(".slide");
+    let current = 0;
+
+    slides[current].classList.add("active");
+
+    function changeSlide() {
+        slides[current].classList.remove("active");
+
+        current = (current + 1) % slides.length;
+
+        slides[current].classList.add("active");
+    }
+
+    setInterval(changeSlide, 5000);
+});
+</script>
 
 </body>
 </html>
