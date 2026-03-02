@@ -1,5 +1,4 @@
-/* ===== Global Reset ===== */
-
+/* ============================== Global Reset ============================== */
 @font-face {
     font-family: 'GreatVictorian';
     src: url('assets/fonts/GreatVictorian-Standard.otf') format('opentype');
@@ -26,8 +25,7 @@ body {
     font-size: 40px;
 }
 
-/* ===== Header ===== */
-
+/* ============================== Header ============================== */
 header {
     font-family: 'GreatVictorian', sans-serif;
     font-weight: bold;
@@ -40,15 +38,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     background: rgba(11, 18, 32, 0.75);
     backdrop-filter: blur(14px);
     border-bottom: 1px solid rgba(47, 109, 246, 0.25);
     z-index: 100;
 }
 
-/* Logo area */
-
+/* ============================== Logo area ============================== */
 .logo-area {
     display: flex;
     align-items: center;
@@ -62,9 +58,9 @@ header {
 }
 
 .logo-link {
-    display: flex;           /* makes it behave like previous layout */
+    display: flex;
     align-items: center;
-    height: 100%;            /* match header height */
+    height: 100%;
     text-decoration: none;
 }
 
@@ -73,8 +69,7 @@ header {
     color: #ffb86b;
 }
 
-/* Center navigation */
-
+/* ============================== Center navigation ============================== */
 .main-nav {
     position: absolute;
     left: 50%;
@@ -82,13 +77,14 @@ header {
 }
 
 .main-nav a {
+    font-family: 'GreatVictorian', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
     margin: 0 25px;
     text-decoration: none;
     color: #a9b7d0;
-    font-weight: 500;
     transition: 0.2s ease;
     letter-spacing: 2px;
-    font-weight: bold;
     text-shadow:
         -1px -1px 0 #000,
          1px -1px 0 #000,
@@ -100,10 +96,9 @@ header {
     color: #ff9a3c;
 }
 
-/* ===== Hero Section ===== */
-
+/* ============================== Hero Section ============================== */
 .hero {
-    height: 80vh;
+    height: 100vh;
     background-image: url("assets/LibraryHero.png");
     background-size: cover;
     background-position: center;
@@ -114,14 +109,22 @@ header {
     text-align: center;
 }
 
+.hero-home {
+    background-image: url("assets/Screenshot_MainMenu.png");
+}
+
+.hero-spectral {
+    background-image: url("assets/Screenshot_Mansion.png");
+}
+
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(
         to bottom,
-        rgba(11,18,32,0.8),
-        rgba(11,18,32,0.6)
+        rgba(11,18,32,0.6),
+        rgba(11,18,32,0.4)
     );
 }
 
@@ -133,14 +136,11 @@ header {
 }
 
 .hero-logo {
-    max-width: 700px;   /* controls size */
+    max-width: 700px;
     width: 100%;
     height: auto;
-
     margin-top: 50px;
     margin-bottom: 30px;
-
-    /* optional cinematic treatment */
     filter: drop-shadow(0 0 25px rgba(0,0,0,0.6));
 }
 
@@ -150,10 +150,8 @@ header {
     font-size: 150px;
     margin-bottom: 20px;
     letter-spacing: 3px;
-
     color: #ff9a3c;
     text-shadow: 0 0 25px rgba(255,154,60,0.4);
-
 }
 
 .hero p {
@@ -163,8 +161,7 @@ header {
     color: #c7d4ec;
 }
 
-/* ===== Content Sections ===== */
-
+/* ============================== Content Sections ============================== */
 .content {
     max-width: 1100px;
     margin: 0 auto;
@@ -204,8 +201,15 @@ ul {
     color: #a9b7d0;
 }
 
-/* ===== Games Grid ===== */
+a {
+    font-family: 'Noto Serif', serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #a9b7d0;
+    text-decoration: none;
+}
 
+/* ============================== Games Grid ============================== */
 .games-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -233,24 +237,20 @@ ul {
     margin-bottom: 20px;
 }
 
-/* ===== Buttons ===== */
-
+/* ============================== Buttons ============================== */
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
     padding: 12px 28px;
-
     width: 100%;
     height: 48px;
-
     border-radius: 8px;
-    background: linear-gradient(135deg, #2f6df6, #2f6df6);
+    background: linear-gradient(135deg, #203f68, #203f68);
     color: white;
     text-decoration: none;
     font-weight: 600;
-
     transition: 0.25s ease;
     color: #ffffff;
     letter-spacing: 0.2px;
@@ -266,21 +266,19 @@ ul {
     box-shadow: 0 10px 25px rgba(47,109,246,0.4);
 }
 
-/* ===== Screenshots ===== */
+/* ============================== Screenshots ============================== */
 .screenshot-section {
     padding: 0px 0;
 }
 
-/* Title alignment */
 .screenshot-section h2 {
     margin-bottom: 20px;
 }
 
-/* Slideshow */
 .slideshow {
     width: 100%;
     position: relative;
-    aspect-ratio: 16 / 9; /* Forces height so container doesn't collapse */
+    aspect-ratio: 16 / 9;
 }
 
 .slide {
@@ -299,7 +297,7 @@ ul {
     opacity: 1;
 }
 
-/* ===== Trailer ===== */
+/* ============================== Trailer ============================== */
 .video-section {
     padding-top: 20px;
     height: 100%;
@@ -307,7 +305,7 @@ ul {
 }
 .video-section h2 {
     max-width: 1100px;
-    margin: 0 auto 20px auto;  /* centers container but keeps text left */
+    margin: 0 auto 20px auto;
     padding: 0 0px;
     text-align: left;
 }
@@ -325,32 +323,63 @@ ul {
     border-radius: 16px;
 }
 
-/* ===== Contact ===== */
-
-.contact-grid {
-    display: grid;
-    gap: 15px;
-    font-family: 'Noto Serif', serif;
-    font-weight: normal;
-    font-size: 18px;
-    letter-spacing: 1px;
+/* ============================== Contact ============================== */
+.header-socials {
+    display: flex;
+    gap: 25px;
+    align-items: center;
 }
 
-.contact-grid a {
-    color: #a9b7d0;
-    text-decoration: none;
+.header-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 10px;
+
+    transition: all 0.25s ease;
 }
 
-.contact-grid a:hover {
-    color: #ff9a3c;
+.header-socials img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    filter: brightness(1);
+    transition: 0.25s ease;
 }
 
-/* ===== Footer ===== */
+.header-socials a:hover {
+    transform: translateY(-3px);
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 40px rgba(47, 109, 246, 0.7);
+    filter: brightness(2);
+}
 
+/* ============================== Footer ============================== */
 footer {
     text-align: center;
     padding: 60px 20px;
     color: #6b7a94;
+}
+
+.footer-link {
+    font-family: 'GreatVictorian', sans-serif;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease;
+    text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+.footer-link:hover {
+    color: #ff9a3c;
 }
