@@ -383,3 +383,70 @@ footer {
 .footer-link:hover {
     color: #ff9a3c;
 }
+
+/* ============================== MOBILE RESPONSIVENESS ============================== */
+
+/* This code runs only when the screen is 1400px wide or smaller */
+@media screen and (max-width: 1400px) {
+    
+    body {
+        font-size: 24px; /* Shrinks the text so it fits on a phone screen */
+    }
+
+    /* Fix the Header: Stack the logo, menu, and socials vertically */
+    header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        position: relative; /* Prevents it from covering the Hero text */
+        gap: 15px;
+    }
+
+    /* Fix the Navigation: Move it from the center to a normal row */
+    .main-nav {
+        position: static;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .main-nav a {
+        font-size: 22px;
+        margin: 0 15px;
+    }
+
+    /* Shrink the Logo and Social Icons */
+    .logo {
+        height: 60px;
+        width: auto;
+    }
+
+    .header-socials img {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Adjust the Hero section so it's not too tall on a phone */
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-logo {
+        max-width: 85%;
+    }
+
+    /* Ensure descriptions and headings have room on the sides */
+    .content {
+        padding: 40px 20px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    /* Make sure the game trailer video fits the phone width */
+    .video-container {
+        width: 100%;
+    }
+}
