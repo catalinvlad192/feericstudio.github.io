@@ -123,8 +123,8 @@ header {
     inset: 0;
     background: linear-gradient(
         to bottom,
-        rgba(11,18,32,0.6),
-        rgba(11,18,32,0.4)
+        rgba(11,18,32,0.7),
+        rgba(11,18,32,0.5)
     );
 }
 
@@ -384,28 +384,24 @@ footer {
     color: #ff9a3c;
 }
 
-/* ============================== Mobile size ============================== */
-/* ============================== FINAL STABLE MOBILE FIX ============================== */
-
+/* ============================== Mobile ============================== */
 @media screen and (max-width: 1300px) {
     
-    /* 1. Reset Global Font */
     body {
-        font-size: 22px; /* Balanced size for mobile */
+        font-size: 22px;
     }
 
-    /* 2. Header: Keeping your preferred "stacked" look that worked */
     header {
         height: auto;
         padding: 20px;
         flex-direction: column;
-        position: relative; /* Keeps it in the flow so it doesn't cover content */
+        position: relative;
         gap: 15px;
-        background: rgba(11, 18, 32, 0.95); /* Slightly more solid for readability */
+        background: rgba(11, 18, 32, 0.95);
     }
 
     .logo {
-        height: 60px; /* Prevents the logo from being cut or too huge */
+        height: 60px;
         width: auto;
         object-fit: contain;
     }
@@ -423,10 +419,9 @@ footer {
         margin: 0 15px;
     }
 
-    /* 3. HERO: This stops the text from overlapping */
     .hero {
         height: auto;
-        min-height: 70vh; /* Takes most of the screen but expands if text is long */
+        min-height: 70vh;
         padding: 80px 20px;
         display: flex;
         align-items: center;
@@ -437,14 +432,13 @@ footer {
         height: auto;
     }
 
-    /* 4. CONTENT SECTIONS: Ensuring big gaps between About and Games */
     .content {
         padding: 60px 20px; 
         max-width: 100%;
     }
 
     section {
-        margin-bottom: 40px; /* Physical buffer between sections */
+        margin-bottom: 40px;
     }
 
     h2 {
@@ -452,7 +446,6 @@ footer {
         margin-top: 0;
     }
 
-    /* 5. GAMES GRID: Ensure cards don't overlap in landscape or portrait */
     .games-grid {
         display: flex;
         flex-direction: column;
